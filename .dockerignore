@@ -1,8 +1,9 @@
-node_modules
-vendor
 .git
 .gitignore
+node_modules
+vendor
 .env
-.env.*
+# Ensure .env.example is included in Docker build context
+!.env.example
 storage/logs/*
 public/build
