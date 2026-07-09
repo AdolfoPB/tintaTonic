@@ -194,8 +194,8 @@
         <div class="min-h-screen bg-[#525453]">
             <header class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-[#2f2f2b]/94 text-white shadow-sm backdrop-blur-md">
                 <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
-                    <a href="#inicio" class="shrink-0 inline-flex items-center" aria-label="Tinta & Tonic homepage">
-                        <img src="{{ Vite::asset('resources/img/tinta-tonic-logo.png') }}" alt="Tinta & Tonic" class="h-10 sm:h-14 object-contain" />
+                    <a href="#inicio" class="shrink-0 inline-flex h-full items-center" aria-label="Tinta & Tonic homepage">
+                        <img src="{{ Vite::asset('resources/img/tinta-tonic-logo.png') }}" alt="Tinta & Tonic" class="h-12 sm:h-16 object-contain" />
                         <span class="sr-only">Tinta &amp; Tonic</span>
                     </a>
 
