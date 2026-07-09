@@ -195,7 +195,7 @@
             <header class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-[#2f2f2b]/94 text-white shadow-sm backdrop-blur-md">
                 <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
                     <a href="#inicio" class="shrink-0 inline-flex h-full items-center" aria-label="Tinta & Tonic homepage">
-                        <img src="{{ Vite::asset('resources/img/tinta-tonic-logo.png') }}" alt="Tinta & Tonic" class="h-24 sm:h-32 object-contain" />
+                        <img src="{{ Vite::asset('resources/img/tinta-tonic-logo2.png') }}" alt="Tinta & Tonic" class="h-12 sm:h-16 object-contain" />
                         <span class="sr-only">Tinta &amp; Tonic</span>
                     </a>
 
@@ -237,18 +237,20 @@
                     <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.88)_0%,rgba(47,47,43,.72)_48%,rgba(0,58,134,.48)_100%)]"></div>
                     <div class="absolute inset-x-0 top-0 h-2 bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)]"></div>
 
-                    <div class="relative mx-auto flex min-h-screen max-w-7xl items-center px-5 py-28 sm:px-8 md:py-36">
-                        <div class="max-w-4xl">
+                    <div class="relative mx-auto flex min-h-screen max-w-7xl items-start px-5 pt-[calc(5rem+1cm)] pb-28 sm:px-8 md:pt-[calc(10rem+1cm)] md:pb-32">
+                        <div class="mx-auto max-w-4xl text-center">
                             
-                            <h1 class="text-white">
-                                <img src="{{ Vite::asset('resources/img/tinta-tonic-logo.png') }}" alt="Tinta &amp; Tonic" class="w-full max-w-[520px] object-contain" />
-                                <span class="sr-only">Tinta &amp; Tonic</span>
-                            </h1>
-                            <p class="mt-6 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
+                            <div class="mx-auto w-full max-w-[520px] rounded-3xl bg-[#000000]/50 p-6 sm:p-8">
+                                <h1 class="text-white">
+                                    <img src="{{ Vite::asset('resources/img/tinta-tonic-logo2.png') }}" alt="Tinta &amp; Tonic" class="w-full object-contain" />
+                                    <span class="sr-only">Tinta &amp; Tonic</span>
+                                </h1>
+                            </div>
+                            <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
                                 Una carta para compartir, una barra con caracter y una noche que empieza con tapas y termina en sobremesa.
                             </p>
 
-                            <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+                            <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
                                 <a href="#tablas" class="inline-flex h-12 items-center justify-center rounded-lg bg-white px-6 text-sm font-bold text-black transition hover:bg-white/88">
                                     Ver carta
                                 </a>
