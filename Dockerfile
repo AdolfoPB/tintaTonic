@@ -25,9 +25,14 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 COPY . /var/www/html
 
+RUN mkdir -p storage/framework/{sessions,views,cache} bootstrap/cache \
+    && touch database/database.sqlite \
+    && chown -R www-data:www-data storage bootstrap/cache database
+
 RUN composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader \
     && npm install \
     && npm run build \
+    && php artisan migrate --force \
     && php artisan config:cache \
     && php artisan route:cache \
     && php artisan view:cache
