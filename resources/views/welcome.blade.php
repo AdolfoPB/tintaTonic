@@ -194,8 +194,9 @@
         <div class="min-h-screen bg-[#525453]">
             <header class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-[#2f2f2b]/94 text-white shadow-sm backdrop-blur-md">
                 <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
-                    <a href="#inicio" class="shrink-0 font-['Playfair_Display'] text-2xl font-bold tracking-normal text-white">
-                        Tinta <span class="font-sans text-base font-medium">&amp;</span> Tonic
+                    <a href="#inicio" class="shrink-0 inline-flex items-center" aria-label="Tinta & Tonic homepage">
+                        <img src="{{ Vite::asset('resources/img/tinta-tonic-logo.png') }}" alt="Tinta & Tonic" class="h-8 sm:h-10 object-contain" />
+                        <span class="sr-only">Tinta &amp; Tonic</span>
                     </a>
 
                     <a href="#reservas" class="inline-flex h-10 shrink-0 items-center justify-center rounded-lg bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)] px-4 text-sm font-bold text-white transition hover:bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)]">
@@ -241,9 +242,9 @@
                             <p class="mb-6 inline-flex w-fit rounded-lg bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)] px-4 py-2 text-sm font-bold text-white">
                                 Bar de tapas / tablas españolas / cocteleria
                             </p>
-                            <h1 class="font-['Playfair_Display'] text-5xl leading-[.9] font-extrabold tracking-normal text-white sm:text-7xl lg:text-8xl">
-                                
-                                Tinta &amp; Tonic
+                            <h1 class="text-white">
+                                <img src="{{ Vite::asset('resources/img/tinta-tonic-logo.png') }}" alt="Tinta &amp; Tonic" class="w-full max-w-[520px] object-contain" />
+                                <span class="sr-only">Tinta &amp; Tonic</span>
                             </h1>
                             <p class="mt-6 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
                                 Una carta para compartir, una barra con caracter y una noche que empieza con tapas y termina en sobremesa.
