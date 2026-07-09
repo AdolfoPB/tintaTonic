@@ -38,4 +38,4 @@ RUN cp .env.example .env \
 
 EXPOSE 10000
 
-CMD php artisan serve --host=0.0.0.0 --port=${PORT:-10000}
+CMD ["/bin/sh", "-lc", "php artisan route:clear && php artisan config:clear && php artisan view:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"]
