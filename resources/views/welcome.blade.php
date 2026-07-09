@@ -239,9 +239,7 @@
 
                     <div class="relative mx-auto flex min-h-screen max-w-7xl items-center px-5 py-28 sm:px-8 md:py-36">
                         <div class="max-w-4xl">
-                            <p class="mb-6 inline-flex w-fit rounded-lg bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)] px-4 py-2 text-sm font-bold text-white">
-                                Bar de tapas / tablas españolas / cocteleria
-                            </p>
+                            
                             <h1 class="text-white">
                                 <img src="{{ Vite::asset('resources/img/tinta-tonic-logo.png') }}" alt="Tinta &amp; Tonic" class="w-full max-w-[520px] object-contain" />
                                 <span class="sr-only">Tinta &amp; Tonic</span>
