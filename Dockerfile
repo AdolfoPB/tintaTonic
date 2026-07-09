@@ -29,9 +29,9 @@ RUN mkdir -p storage/app/public storage/framework/{sessions,views,cache} storage
     && touch database/database.sqlite \
     && chown -R www-data:www-data storage bootstrap/cache database
 
-RUN cp .env.example .env \
+RUN composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader \
+    && cp .env.example .env \
     && php artisan key:generate --force \
-    && composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader \
     && npm install \
     && npm run build \
     && php artisan migrate --force
