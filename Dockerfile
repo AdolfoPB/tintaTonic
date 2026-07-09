@@ -26,7 +26,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 # Copy composer files first to leverage Docker layer cache for dependencies
 COPY composer.json composer.lock /var/www/html/
 
-RUN composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader
+RUN composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader --no-scripts
 
 # Now copy the rest of the application
 COPY . /var/www/html
@@ -35,8 +35,10 @@ RUN mkdir -p storage/app/public storage/framework/{sessions,views,cache} storage
     && touch database/database.sqlite \
     && chown -R www-data:www-data storage bootstrap/cache database
 
-RUN cp .env.example .env \
+RUN composer dump-autoload --optimize \
+    && cp .env.example .env \
     && php artisan key:generate --force \
+    && php artisan package:discover --ansi \
     && npm install \
     && npm run build \
     && php artisan migrate --force
