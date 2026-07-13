@@ -199,7 +199,7 @@
                         <span class="sr-only">Tinta &amp; Tonic</span>
                     </a>
 
-                    <a href="#reservas" class="inline-flex h-10 shrink-0 items-center justify-center rounded-lg bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)] px-4 text-sm font-bold text-white transition hover:bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)]">
+                    <a href="#reservas" class="inline-flex h-10 shrink-0 items-center justify-center rounded-lg bg-[#111142] px-4 text-sm font-bold text-white transition hover:bg-[#111142]">
                         Reservar
                     </a>
                 </div>
@@ -208,7 +208,7 @@
                     <div class="mx-auto max-w-7xl overflow-x-auto px-5 py-3 sm:px-8">
                         <div class="flex w-max gap-2">
                             @foreach ($menuSections as $section)
-                                <a href="#{{ $section['id'] }}" class="rounded-lg border border-white/12 bg-white/8 px-4 py-2 text-sm font-semibold text-white/76 transition hover:border-white/40 hover:bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)] hover:text-white">
+                                <a href="#{{ $section['id'] }}" class="rounded-lg border border-white/12 bg-white/8 px-4 py-2 text-sm font-semibold text-white/76 transition hover:border-white/40 hover:bg-[#111142] hover:text-white">
                                     {{ $section['title'] }}
                                 </a>
                             @endforeach
@@ -220,7 +220,7 @@
             <nav class="fixed bottom-0 left-0 top-[65px] z-30 w-24 overflow-y-auto border-r border-black/10 bg-[#2f2f2b] px-2 py-3 shadow-lg md:hidden" aria-label="Secciones de la carta mobile">
                 <div class="grid gap-2">
                     @foreach ($menuSections as $section)
-                        <a href="#{{ $section['id'] }}" class="rounded-lg border border-white/12 bg-white/8 px-2 py-3 text-center text-[11px] font-bold leading-tight text-white/78 transition hover:border-white/36 hover:bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)] hover:text-white">
+                        <a href="#{{ $section['id'] }}" class="rounded-lg border border-white/12 bg-white/8 px-2 py-3 text-center text-[11px] font-bold leading-tight text-white/78 transition hover:border-white/36 hover:bg-[#111142] hover:text-white">
                             {{ $section['title'] }}
                         </a>
                     @endforeach
@@ -238,7 +238,7 @@
                     >
                     <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.88)_0%,rgba(47,47,43,.72)_48%,rgba(0,58,134,.48)_100%)]"></div>
                     <div class="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-[linear-gradient(180deg,rgba(82,84,83,0)_0%,rgba(82,84,83,.70)_58%,#525453_100%)]"></div>
-                    <div class="absolute inset-x-0 top-0 h-2 bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)]"></div>
+                    <div class="absolute inset-x-0 top-0 h-2 bg-[#111142]"></div>
 
                     <div class="relative mx-auto flex min-h-screen max-w-7xl items-start px-5 pt-[calc(5rem+1cm)] pb-28 sm:px-8 md:pt-[calc(10rem+1cm)] md:pb-32">
                         <div class="mx-auto max-w-4xl text-center">
@@ -257,7 +257,7 @@
                                 <a href="#tablas" class="inline-flex h-12 items-center justify-center rounded-lg bg-white px-6 text-sm font-bold text-black transition hover:bg-white/88">
                                     Ver carta
                                 </a>
-                                <a href="#reservas" class="inline-flex h-12 items-center justify-center rounded-lg border border-white/24 bg-white/8 px-6 text-sm font-bold text-white transition hover:bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)]">
+                                <a href="#reservas" class="inline-flex h-12 items-center justify-center rounded-lg border border-white/24 bg-white/8 px-6 text-sm font-bold text-white transition hover:bg-[#111142]">
                                     Reservar
                                 </a>
                             </div>
@@ -286,7 +286,7 @@
 
                                         <div>
                                             <div class="border-b border-white/10 bg-[#2f2f2b] p-6 lg:p-8">
-                                                <div class="mb-5 h-1 w-24 rounded-full bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)]"></div>
+                                                <div class="mb-5 h-1 w-24 rounded-full bg-[#111142]"></div>
                                                 <p class="text-sm font-bold uppercase tracking-normal text-white/54">{{ $section['subtitle'] }}</p>
                                                 <h2 class="mt-2 font-['Playfair_Display'] text-4xl font-bold tracking-normal text-white sm:text-5xl">{{ $section['title'] }}</h2>
                                             </div>
@@ -310,8 +310,9 @@
                     </div>
                 </section>
 
-                <section id="reservas" class="bg-[#2f2f2b] text-white">
-                    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[1fr_.8fr] lg:py-24">
+                <section id="reservas" class="relative overflow-hidden bg-[#2f2f2b] text-white">
+                    <div class="pointer-events-none absolute inset-x-0 top-0" style="height: 10rem; background: linear-gradient(180deg, #525453 0%, rgba(82, 84, 83, .62) 34%, rgba(47, 47, 43, .86) 72%, #2f2f2b 100%);"></div>
+                    <div class="relative mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[1fr_.8fr] lg:py-24">
                         <div>
                             <p class="text-sm font-bold uppercase tracking-normal text-white/62">Reservas</p>
                             <h2 class="mt-3 font-['Playfair_Display'] text-4xl font-bold tracking-normal sm:text-6xl">Trae hambre. Nosotros ponemos la mesa.</h2>
@@ -327,7 +328,7 @@
                                 <p><span class="font-semibold text-white">Telefono:</span> +569 934 894 34</p>
                                 <p><span class="font-semibold text-white">Web:</span> www.tintatonic.cl</p>
                             </div>
-                            <a href="tel:+56993489434" class="mt-7 inline-flex h-12 w-full items-center justify-center rounded-lg bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)] px-6 text-sm font-bold text-white transition hover:bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)]">
+                            <a href="tel:+56993489434" class="mt-7 inline-flex h-12 w-full items-center justify-center rounded-lg bg-[#111142] px-6 text-sm font-bold text-white transition hover:bg-[#111142]">
                                 Llamar
                             </a>
                         </div>
