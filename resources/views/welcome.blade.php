@@ -230,7 +230,7 @@
             <main id="inicio" class="pl-24 md:pl-0">
                 <section class="relative min-h-screen overflow-hidden bg-[#000000]">
                     <img
-                        src="{{ Vite::asset('resources/img/portada.jpeg') }}"
+                        src="{{ Vite::asset('resources/img/portada.png') }}"
                         alt="Portada de Tinta & Tonic"
                         class="absolute inset-0 h-full w-full object-cover"
                     >
