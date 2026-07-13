@@ -230,9 +230,11 @@
             <main id="inicio" class="pl-24 md:pl-0">
                 <section class="relative min-h-screen overflow-hidden bg-[#000000]">
                     <img
+                        data-hero-cover
                         src="{{ Vite::asset('resources/img/portada.png') }}"
                         alt="Portada de Tinta & Tonic"
-                        class="absolute inset-0 h-full w-full object-cover"
+                        class="absolute inset-0 h-full w-full object-cover transition-opacity duration-200"
+                        style="will-change: opacity;"
                     >
                     <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.88)_0%,rgba(47,47,43,.72)_48%,rgba(0,58,134,.48)_100%)]"></div>
                     <div class="absolute inset-x-0 top-0 h-2 bg-[linear-gradient(90deg,#003a86_0%,#0079b8_48%,#003a86_100%)]"></div>
@@ -332,5 +334,27 @@
                 </section>
             </main>
         </div>
+
+        <script>
+            (() => {
+                const heroCover = document.querySelector('[data-hero-cover]');
+                const heroSection = heroCover?.closest('section');
+
+                if (!heroCover || !heroSection) {
+                    return;
+                }
+
+                const fadeCover = () => {
+                    const heroHeight = heroSection.offsetHeight || window.innerHeight;
+                    const progress = Math.min(Math.max(window.scrollY / (heroHeight * 0.72), 0), 1);
+
+                    heroCover.style.opacity = Math.max(1 - progress, 0.08).toString();
+                };
+
+                fadeCover();
+                window.addEventListener('scroll', fadeCover, { passive: true });
+                window.addEventListener('resize', fadeCover);
+            })();
+        </script>
     </body>
 </html>
