@@ -1,5 +1,5 @@
-@php
-    $defaultPrice = '$12.345';
+﻿@php
+    $defaultPrice = '';
 
     $menuSections = [
         [
@@ -8,23 +8,13 @@
             'subtitle' => 'Para compartir al centro',
             'image' => 'tabla.png',
             'items' => [
-                ['name' => 'Tinta & Tonic', 'description' => 'Salmon curado en citricos, cortes de prosciutto, brochetas de res, chorizo al vino tinto, tocino grillado, queso camembert, mermelada pimenton, aceitunas y tostadas.'],
-                ['name' => 'Rincon del chef', 'description' => 'Pinzas de jaiba, res al vino tinto, camarones apanados, bruschettas, jamon serrano, queso crema, aceitunas y queso al olivo.'],
-                ['name' => 'Sabores del mundo', 'description' => 'Pinzas de jaiba flambeadas al conac, res saltado, caleta de camarones, gyosas de cerdo, cremoso champinon con choricillo y seleccion de quesos.'],
-                ['name' => 'Mediterranea', 'description' => 'Camarones al ajillo, chorizo parrillero al vino tinto, quesos saborizados, jamon serrano, tomates cherry, frutos secos y chips de papas.'],
-                ['name' => 'Crunch', 'description' => 'Camarones apanados, chicken fingers, onion rings y mozzarella sticks con barbecue ahumada y cheddar tocino.'],
-                ['name' => 'Chicken chips', 'description' => 'Quesadillas de pollo, brochetas de pollo pimenton, chicken fingers, onion rings y papas fritas artesanales.'],
-                ['name' => 'Huerta gourmet', 'description' => 'Cremoso caliente de champinones, cebolla caramelizada, brochetas de queso con tomate cherry, hummus y frutas de temporada.'],
-            ],
-        ],
-        [
-            'id' => 'papas',
-            'title' => 'Papas de autor',
-            'subtitle' => 'Papas fritas artesanales con topping',
-            'image' => 'papas de autor.jpg',
-            'items' => [
-                ['name' => 'Tinta & Tonic', 'description' => 'Cortes de res, choricillo, pollo grillado, champinones, pimenton, mozzarella fundida y cebolla caramelizada.'],
-                ['name' => 'Res peruana', 'description' => 'Cortes de res sellada, cebolla morada, tomate, cebollin y salsas de la casa.'],
+                ['name' => 'Tinta & Tonic', 'description' => 'Finos cortes de salmón curado en cítricos, cortes de prosciutto, brochetas de filete, chorizo al vino tinto, tocino grillado, queso camembert con mermelada pimentón, frutas de estación, mix de aceitunas, tostadas y chip de papa camote. Acompañada de salsa cerveza negra.', 'price' => '$29.990'],
+                ['name' => 'Rincón del chef', 'description' => 'Pinzas de jaiba, filete al vino tinto, camarones apanados, bruschettas de jamón serrano y queso crema, aceitunas, cubos de queso al olivo y romero, acompañada de mix de frutos secos.', 'price' => '$27.990'],
+                ['name' => 'Sabores del mundo', 'description' => 'Pinzas de jaiba flambeadas al coñac, trozos de filete saltado, cóctel de camarones estilo peruano, gyosas de cerdo, cremoso champiñón con chorizo. Selección de quesos saborizados y frutas de estación.', 'price' => '$27.990'],
+                ['name' => 'Mediterránea', 'description' => 'Camarones al ajillo, chorizo al vino tinto, selección de quesos saborizados, jamón serrano, tomates cherry saborizados, chip de papas camote, mix de frutos secos y frutas de estación.', 'price' => '$25.990'],
+                ['name' => 'Crunch', 'description' => 'Camarones apanados, chicken fingers, onion rings y mozzarella sticks, acompañada de salsa barbecue y cheddar tocino.', 'price' => '$23.990'],
+                ['name' => 'Chicken chips', 'description' => 'Quesadillas de pollo, brochetas de pollo pimentón, chicken fingers, onion rings y chip de papa camote.', 'price' => '$21.990'],
+                ['name' => 'Huerta gourmet', 'description' => 'Cremoso caliente de champiñón y cebolla caramelizada, brochetas de queso con tomate cherry, hummus de garbanzo con toques de nuez y menta, chip de papas camote y selección de frutas de estación.', 'price' => '$16.990'],
             ],
         ],
         [
@@ -33,33 +23,57 @@
             'subtitle' => 'Productos marinos y tostadas',
             'image' => 'del mar.jpg',
             'items' => [
-                ['name' => 'Ostion a la roquefeler', 'description' => 'Ostion cocinado con tocino al licor de anis, gratin de queso parmesano y perejil fresco.'],
-                ['name' => 'Tataki Pacifico', 'description' => 'Atun sellado en costra de sesamo con mousse de palta, acompanado de tostadas.'],
-                ['name' => 'Tiradito austral', 'description' => 'Laminas de salmon curado con vinagreta maracuya menta, parmesano y alcaparras.'],
-                ['name' => 'Jaiba fundente', 'description' => 'Cremoso caliente de jaiba terminado con queso gratinado, ciboulette y tostadas.'],
-                ['name' => 'Costa suprema', 'description' => 'Machas a la parmesana y langostinos, acompanadas de salsa verde.'],
+                ['name' => 'Ostión a la roquefeler', 'description' => 'Ostión media concha con tocino al licor de anís, finalizado con gratín de queso parmesano y toques de perejil fresco.', 'price' => '$17.490'],
+                ['name' => 'Tataki Pacífico', 'description' => 'Atún sellado en costra de sésamo con mousse de palta, acompañado de tostadas.', 'price' => '$13.990'],
+                ['name' => 'Tiradito austral', 'description' => 'Láminas de salmón curado, coronadas con vinagreta de maracuyá y menta, queso parmesano y alcaparras, junto a tostadas artesanales.', 'price' => '$10.990'],
+                ['name' => 'Jaiba fundente', 'description' => 'Cremoso caliente de jaiba terminado con queso gratinado, toques de ciboulette y tostadas.', 'price' => '$11.490'],
+                ['name' => 'Costa suprema', 'description' => 'Machas a la parmesana y langostinos, acompañadas de salsa verde.', 'price' => '$16.990'],
+                ['name' => 'Tartar de atún y salmón', 'description' => 'Atún y salmón, aderezado con aceite de sésamo, alcaparras, pepinillo dill, limón y un toque sutil de picante y cebollín. Servido sobre una cama de palta y tostadas crujientes.', 'price' => '$11.990'],
+            ],
+        ],
+        [
+            'id' => 'seleccion-grill',
+            'title' => 'Selección Grill',
+            'subtitle' => 'Plancha, parrilla y sabores calientes',
+            'image' => 'grill.png',
+            'items' => [
+                ['name' => 'Entrañable', 'description' => 'Entraña al punto, acompañada de tomate fresco al mortero, queso campestre untable, reducción de vino tinto con romero, uvas y tostadas crujientes.', 'price' => '$16.990'],
+                ['name' => 'Trilogía de gyosas', 'description' => 'Selección de gyosas japonesas cocidas al vapor.', 'price' => '$9.990'],
+                ['name' => 'Fundida campestre', 'description' => 'Fondue de queso cremoso en preparación italiana con chorizo y toques de orégano, acompañado de tostadas.', 'price' => '$13.990'],
+                ['name' => 'Butifarra del chef', 'description' => 'Butifarra grillada con salsa de queso fundido y toques de perejil, acompañado de tomate fresco al mortero y tostadas.', 'price' => '$15.490'],
+                ['name' => 'Pichanga especiada', 'description' => 'Pinchos de camarón al pilpil, mix de aceitunas, mini salamini, quesos saborizados, pepinillo dill. Terminada en toques de aceite especiado.', 'price' => '$11.990'],
             ],
         ],
         [
             'id' => 'ceviches',
             'title' => 'Ceviches',
-            'subtitle' => 'Frescos, citricos y con tostadas',
+            'subtitle' => 'Frescos, cítricos y con tostadas',
             'image' => 'ceviches.jpg',
             'items' => [
-                ['name' => 'Ceviche verde', 'description' => 'Champinones, palta, cebolla morada, mix de pimentones y cilantro, acompanado de tostadas.'],
-                ['name' => 'Ceviche salmon', 'description' => 'Salmon fresco, palta, cebolla morada, mix de pimentones y cilantro, acompanado de tostadas.'],
-                ['name' => 'Trilogia del Pacifico', 'description' => 'Ceviche de atun, ceviche camaron y ceviche salmon marinados en leche de tigre, con tostadas crujientes.'],
+                ['name' => 'Ceviche verde', 'description' => 'Champiñón, palta, palmitos, choclo peruano, mix de pimentones, cebolla morada, cilantro y leche de tigre vegetariana. Acompañado de tostadas.', 'price' => '$10.990'],
+                ['name' => 'Ceviche salmón', 'description' => 'Salmón fresco, palta, choclo peruano, mix de pimentones, cebolla morada, cilantro y leche de tigre. Acompañado de tostadas.', 'price' => '$13.990'],
+                ['name' => 'Trilogía del Pacífico', 'description' => 'Ceviche de atún, ceviche camarón y ceviche salmón marinados en leche de tigre. Acompañados de tostadas.', 'price' => '$15.990'],
+            ],
+        ],
+        [
+            'id' => 'papas',
+            'title' => 'Papas de autor',
+            'subtitle' => 'Papas fritas artesanales con topping',
+            'image' => 'papas de autor.jpg',
+            'items' => [
+                ['name' => 'Fundición tonic', 'description' => 'Filete de res, chorizo, pollo grillado, champiñones y pimentones asados, mozzarella fundida y cebolla caramelizada, sobre papas fritas en gajos, acompañada de salsas.', 'price' => '$20.990'],
+                ['name' => 'Res peruana', 'description' => 'Filete de res sellado, tomate, cebolla morada, cebollín, sobre papas fritas en gajos, acompañada de salsas.', 'price' => '$16.990'],
             ],
         ],
         [
             'id' => 'quesadillas',
             'title' => 'Quesadillas',
-            'subtitle' => 'Con pico de gallo y salsa acida',
+            'subtitle' => 'Con pico de gallo y salsa ácida',
             'image' => 'quesadillas.jpg',
             'items' => [
-                ['name' => 'Pollo pimenton', 'description' => 'Pollo salteado, pimenton, queso fundido y cebolla caramelizada.'],
-                ['name' => 'Res & tocino', 'description' => 'Res salteada con tocino crocante, pimenton y queso fundido.'],
-                ['name' => 'Huerta asada', 'description' => 'Champinon, pimenton, cebolla crispy, queso fundido y cebolla caramelizada.'],
+                ['name' => 'Pollo pimentón', 'description' => 'Salteado de pollo, pimentón, queso fundido y cebolla caramelizada, acompañado de pico de gallo y salsa ácida.', 'price' => '$9.990'],
+                ['name' => 'Res & tocino', 'description' => 'Salteado de res con tocino crocante, pimentón y queso fundido, acompañado de pico de gallo y salsa ácida.', 'price' => '$10.990'],
+                ['name' => 'Huerta asada', 'description' => 'Salteado de champiñón, pimentón, cebolla crispy, queso fundido y cebolla caramelizada, acompañado de pico de gallo y salsa ácida.', 'price' => '$9.990'],
             ],
         ],
         [
@@ -68,98 +82,9 @@
             'subtitle' => 'Pan ciabatta o focaccia',
             'image' => 'sandwich.jpg',
             'items' => [
-                ['name' => 'American mechada', 'description' => 'Carne mechada, queso cheddar, aros de cebolla, pepinillo dill y salsa de la casa.'],
-                ['name' => 'Chicken grill', 'description' => 'Pollo grillado, champinones salteados, berros y mayonesa de aceto balsamico.'],
-                ['name' => 'Mechada chesse', 'description' => 'Carne mechada, queso fundido y salsa de la casa.'],
-            ],
-        ],
-        [
-            'id' => 'grill',
-            'title' => 'Grill',
-            'subtitle' => 'Plancha, parrilla y sabores calientes',
-            'image' => 'grill.png',
-            'items' => [
-                ['name' => 'Entranable', 'description' => 'Entrana al punto con tomate fresco al mortero, queso campestre untable, reduccion de vino tinto con romero, uvas y tostadas.'],
-                ['name' => 'Trilogia de gyosas', 'description' => 'Seleccion de gyosas cocidas al vapor: camaron, cerdo y pollo.'],
-                ['name' => 'Fundida campestre', 'description' => 'Fondue de queso en preparacion italiana con oregano, chorizo y tostadas.'],
-                ['name' => 'Butifarra del chef', 'description' => 'Butifarra grillada con salsa de queso fundido, perejil, tomate fresco y tostadas.'],
-                ['name' => 'Pichanga especiada', 'description' => 'Mix de aceitunas, embutido espanol, pinchos de camaron al pilpil, pepinillo dill, tomate deshidratado y quesos.'],
-            ],
-        ],
-        [
-            'id' => 'tragos',
-            'title' => 'Tragos & Cocteleria',
-            'subtitle' => 'Clasicos, sours, spritz y gin',
-            'image' => 'tragos y cocteleria.jpg',
-            'items' => [
-                ['name' => 'Pisco sour peruano', 'description' => 'Clasico sour de barra.'],
-                ['name' => 'Pisco sour nacional', 'description' => 'Clasico sour de barra.'],
-                ['name' => 'Tom Collins', 'description' => 'Coctel citrico y refrescante.'],
-                ['name' => 'Rusty Nail', 'description' => 'Coctel clasico.'],
-                ['name' => 'Negroni', 'description' => 'Clasico amargo.'],
-                ['name' => 'Negroni Sbagliato', 'description' => 'Version espumante del clasico.'],
-                ['name' => 'Dry Martini', 'description' => 'Clasico seco.'],
-                ['name' => 'Mojito cubano', 'description' => 'Hierbabuena, lima y ron.'],
-                ['name' => 'Mojito cubano sabores', 'description' => 'Mojito con sabores.'],
-                ['name' => 'Mint Julep', 'description' => 'Coctel herbal.'],
-                ['name' => 'Moscow Mule', 'description' => 'Ginger beer, vodka y lima.'],
-                ['name' => 'Margarita', 'description' => 'Tequila, citrico y sal.'],
-                ['name' => 'Paloma', 'description' => 'Tequila y pomelo.'],
-                ['name' => 'Mezcalita', 'description' => 'Mezcal y citricos.'],
-                ['name' => 'Caipirinha', 'description' => 'Cachaza, lima y azucar.'],
-                ['name' => 'White Russian', 'description' => 'Coctel cremoso.'],
-                ['name' => 'Black Russian', 'description' => 'Vodka y cafe.'],
-                ['name' => 'Cosmopolitan', 'description' => 'Vodka, cranberry y citrico.'],
-                ['name' => 'Pornstar Martini', 'description' => 'Martini tropical.'],
-                ['name' => 'Manhattan', 'description' => 'Whiskey y vermut.'],
-                ['name' => 'Old Fashioned', 'description' => 'Whiskey clasico.'],
-                ['name' => 'Espresso Martini', 'description' => 'Cafe y vodka.'],
-                ['name' => 'Bloody Mary', 'description' => 'Vodka, tomate y especias.'],
-                ['name' => 'Ramazzotti Spritz', 'description' => 'Spritz herbal.'],
-                ['name' => 'Aperol Spritz', 'description' => 'Spritz italiano.'],
-                ['name' => 'Coronadita', 'description' => 'Coctel con cerveza.'],
-                ['name' => 'Daikiri sabores', 'description' => 'Daikiri frutal.'],
-                ['name' => 'Gin Tonic', 'description' => 'Gin, tonic y botanicos.'],
-                ['name' => 'Tropical Gin', 'description' => 'Gin con perfil tropical.'],
-                ['name' => 'Clavo oxidado', 'description' => 'Coctel intenso.'],
-                ['name' => 'Sangria', 'description' => 'Vino, fruta y frescor.'],
-                ['name' => 'Pina colada', 'description' => 'Ron, pina y coco.'],
-                ['name' => 'Mojito', 'description' => 'Ron, menta y lima.'],
-                ['name' => 'Mojito sabores', 'description' => 'Mojito frutal.'],
-            ],
-        ],
-        [
-            'id' => 'jugos-bebidas',
-            'title' => 'Jugos & Bebidas',
-            'subtitle' => 'Jugos, limonadas y bebidas',
-            'image' => 'jugos y bebidas.jpg',
-            'items' => [
-                ['name' => 'Pina', 'description' => 'Jugo natural.'],
-                ['name' => 'Frutilla', 'description' => 'Jugo natural.'],
-                ['name' => 'Mango', 'description' => 'Jugo natural.'],
-                ['name' => 'Frutos rojos', 'description' => 'Jugo natural.'],
-                ['name' => 'Frambuesa', 'description' => 'Jugo natural.'],
-                ['name' => 'Limonada jengibre', 'description' => 'Limonada fresca.'],
-                ['name' => 'Limonada menta jengibre', 'description' => 'Limonada fresca.'],
-                ['name' => 'Limonada sabores', 'description' => 'Limonada de la casa.'],
-                ['name' => 'Coca-Cola', 'description' => 'Bebida.'],
-                ['name' => 'Sprite', 'description' => 'Bebida.'],
-                ['name' => 'Fanta', 'description' => 'Bebida.'],
-                ['name' => 'Ginger Ale', 'description' => 'Bebida.'],
-                ['name' => 'Agua mineral con gas', 'description' => 'Agua mineral.'],
-                ['name' => 'Agua mineral sin gas', 'description' => 'Agua mineral.'],
-            ],
-        ],
-        [
-            'id' => 'cafe-te',
-            'title' => 'Cafe y Te',
-            'subtitle' => 'Para cerrar la mesa',
-            'image' => 'cafe y te.jpg',
-            'items' => [
-                ['name' => 'Americano', 'description' => 'Cafe caliente.'],
-                ['name' => 'Te negro', 'description' => 'Infusion clasica.'],
-                ['name' => 'Te verde', 'description' => 'Infusion ligera.'],
-                ['name' => 'Infusion', 'description' => 'Menta y limon.'],
+                ['name' => 'American mechada', 'description' => 'Carne mechada, queso cheddar, aros de cebolla, pepinillo dill y salsa de la casa.', 'price' => '$9.990'],
+                ['name' => 'Chicken grill', 'description' => 'Pollo grillado, queso, pimentón asado, champiñón, con mayonesa de aceto balsámico.', 'price' => '$8.990'],
+                ['name' => 'Mechada tocino', 'description' => 'Carne mechada, tocino, palta y mayonesa.', 'price' => '$9.990'],
             ],
         ],
         [
@@ -168,9 +93,240 @@
             'subtitle' => 'Final dulce',
             'image' => 'postres.jpg',
             'items' => [
-                ['name' => 'Brownie chocolate', 'description' => 'Brownie intenso de chocolate.'],
-                ['name' => 'Volcan de chocolate', 'description' => 'Bizcocho tibio con centro fundente.'],
-                ['name' => 'Suspiro limeno', 'description' => 'Postre clasico suave y dulce.'],
+                ['name' => 'Brownie con helado', 'description' => 'Elaborado artesanalmente con una textura suave y un delicado toque a cacao, acompañado de helado.', 'price' => '$4.990'],
+                ['name' => 'Volcán de chocolate con helado', 'description' => 'Bizcocho de chocolate con centro de chocolate fundido decorado con salsa de vino tinto y helado.', 'price' => '$6.990'],
+                ['name' => 'Suspiro limeño con helado', 'description' => 'Crema de manjar coronado con merengue italiano y un delicado toque de canela.', 'price' => '$5.490'],
+                ['name' => 'Celestino con helado', 'description' => 'Celestinos con helado de vainilla y salsa de frutos rojos.', 'price' => '$5.990'],
+            ],
+        ],
+        [
+            'id' => 'cafe-te',
+            'title' => 'Café y Té',
+            'subtitle' => 'Para cerrar la mesa',
+            'image' => 'cafe y te.jpg',
+            'items' => [
+                ['name' => 'Café', 'description' => '', 'price' => '$2.500'],
+                ['name' => 'Té variedades', 'description' => '', 'price' => '$1.990'],
+                ['name' => 'Infusión menta limón', 'description' => '', 'price' => '$1.990'],
+            ],
+        ],
+        [
+            'id' => 'jugos-bebidas',
+            'title' => 'Jugos & Bebidas',
+            'subtitle' => 'Jugos, limonadas y bebidas',
+            'image' => 'jugos y bebidas.jpg',
+            'items' => [
+                ['name' => 'Jugos', 'description' => 'Frambuesa, piña, mango, maracuyá.', 'price' => '$3.990'],
+                ['name' => 'Clásica', 'description' => 'Limonada.', 'price' => '$3.990'],
+                ['name' => 'Menta Jengibre', 'description' => 'Limonada.', 'price' => '$4.900'],
+                ['name' => 'Menta Frambuesa', 'description' => 'Limonada.', 'price' => '$4.990'],
+                ['name' => 'Bebida', 'description' => '350cc.', 'price' => '$2.700'],
+                ['name' => 'Agua mineral con gas', 'description' => '', 'price' => '$2.890'],
+                ['name' => 'Agua mineral sin gas', 'description' => '', 'price' => '$2.890'],
+                ['name' => 'Red Bull variedades', 'description' => '', 'price' => '$3.500'],
+                ['name' => 'Fentimans variedades', 'description' => '', 'price' => '$3.800'],
+            ],
+        ],
+        [
+            'id' => 'cocteleria',
+            'title' => 'Cóctelería',
+            'subtitle' => 'Clásicos, sours, spritz y gin',
+            'image' => 'tragos y cocteleria.jpg',
+            'items' => [
+                ['name' => 'Gin Tonic', 'description' => 'Gin, bebida tónica, toque cítrico.', 'price' => '$5.990'],
+                ['name' => 'Tropical Gin', 'description' => 'Gin, Red Bull Yellow.', 'price' => '$6.500'],
+                ['name' => 'Pisco Sour nacional', 'description' => 'Limón, syrup simple, pisco artesano, Angostura bitter.', 'price' => '$5.450'],
+                ['name' => 'Pisco Sour peruano', 'description' => 'Lima, syrup simple, pisco gran cruz, Angostura bitter.', 'price' => '$7.990'],
+                ['name' => 'Mojito cubano', 'description' => 'Limón, syrup simple, menta, ron Maddero blanco, agua soda.', 'price' => '$5.500'],
+                ['name' => 'Mojito Sabores', 'description' => 'Limón, syrup simple, menta, ron Maddero blanco, pulpa a elección, agua soda.', 'price' => '$6.990'],
+                ['name' => 'Moscow mule', 'description' => 'Lima, syrup simple, vodka Smirnoff, ginger beer.', 'price' => '$6.800'],
+                ['name' => 'Caipiriña', 'description' => 'Lima en cuartos, syrup simple, Cachaça 51.', 'price' => '$5.450'],
+                ['name' => 'Mint julep', 'description' => 'Menta, lima, demerara syrup, whisky Bulleit bourbon.', 'price' => '$7.800'],
+                ['name' => 'Margarita', 'description' => 'Lima, triple sec, tequila Olmeca blanco.', 'price' => '$6.800'],
+                ['name' => 'Tom Collins', 'description' => 'Limón, syrup simple, gin Gordons, agua soda.', 'price' => '$6.990'],
+                ['name' => 'White Russian', 'description' => 'Crema de leche, syrup simple, licor Kahlua coffee, vodka Smirnoff.', 'price' => '$6.800'],
+                ['name' => 'Black Russian', 'description' => 'Licor Kahlua coffee, vodka Smirnoff.', 'price' => '$5.800'],
+                ['name' => 'Cosmopolitan', 'description' => 'Lima, vodka Absolut citron, triple sec, cranberry.', 'price' => '$6.990'],
+                ['name' => 'Bramble', 'description' => 'Gin Tanqueray Royale, moras, lima, syrup simple.', 'price' => '$7.990'],
+                ['name' => 'Pornstar Martini', 'description' => 'Vodka Stoli vainilla, limón, maracuyá, syrup simple, licor 43.', 'price' => '$7.990'],
+                ['name' => 'Negroni', 'description' => 'Gin Gordons, vermouth Rosso Cinzano, Campari.', 'price' => '$6.800'],
+                ['name' => 'Manhattan', 'description' => 'Vermouth rosso, bourbon whisky Bulleit, Angostura bitter, cherry.', 'price' => '$7.890'],
+                ['name' => 'Martini Dry', 'description' => 'Vodka Smirnoff, vermouth dry, aceituna sevillana.', 'price' => '$6.990'],
+                ['name' => 'Old Fashion', 'description' => 'Bulleit bourbon whisky, demerara syrup, Angostura bitter, soda.', 'price' => '$7.890'],
+                ['name' => 'Negroni Sbagliato', 'description' => 'Campari, vermouth rosso Cinzano, espumante.', 'price' => '$6.700'],
+                ['name' => 'Rusty Nail', 'description' => 'Johnnie Walker Red, Drambuie.', 'price' => '$6.750'],
+                ['name' => 'Espresso Martini', 'description' => 'Vodka Smirnoff, licor Kahlua, espresso, syrup simple.', 'price' => '$7.680'],
+                ['name' => 'Bloody Mary', 'description' => 'Vodka Smirnoff, jugo de tomate, limón, sal, pimienta, salsa inglesa, Tabasco, aceitunas sevillanas, apio.', 'price' => '$7.980'],
+                ['name' => 'Ramazzotti Spritz', 'description' => 'Ramazzotti Rosato, espumante, agua soda.', 'price' => '$6.500'],
+                ['name' => 'Ramazzotti Violetto Tonic', 'description' => 'Ramazzotti Violetto, tónica, romero, arándanos.', 'price' => '$6.500'],
+                ['name' => 'Aperol Spritz', 'description' => 'Aperol, espumante, agua soda, naranja.', 'price' => '$6.800'],
+            ],
+        ],
+        [
+            'id' => 'whisky',
+            'title' => 'Whisky',
+            'subtitle' => 'Destilados',
+            'image' => 'whisky.png',
+            'items' => [
+                ['name' => 'Johnnie Walker Red', 'description' => '', 'price' => '$7.990'],
+                ['name' => 'Johnnie Walker Black', 'description' => '', 'price' => '$9.990'],
+                ['name' => 'Johnnie Walker Double Black', 'description' => '', 'price' => '$10.990'],
+                ['name' => 'Bulleit Bourbon', 'description' => '', 'price' => '$9.990'],
+                ['name' => 'Chivas Regal 12', 'description' => '', 'price' => '$9.990'],
+                ['name' => 'Chivas Regal 18', 'description' => '', 'price' => '$15.990'],
+                ['name' => 'Jameson', 'description' => '', 'price' => '$8.990'],
+                ['name' => 'Jack Daniels Gentleman', 'description' => '', 'price' => '$11.990'],
+                ['name' => 'Jack Daniels N7', 'description' => '', 'price' => '$9.900'],
+                ['name' => 'Jack Daniels Apple', 'description' => '', 'price' => '$9.500'],
+                ['name' => 'Jack Daniels Fire', 'description' => '', 'price' => '$9.500'],
+                ['name' => 'Jack Daniels Honey', 'description' => '', 'price' => '$9.500'],
+            ],
+        ],
+        [
+            'id' => 'licores',
+            'title' => 'Licores',
+            'subtitle' => 'Licores y bajativos',
+            'image' => 'licores.png',
+            'items' => [
+                ['name' => 'Jagermeister', 'description' => '', 'price' => '$7.990'],
+                ['name' => 'Baileys', 'description' => '', 'price' => '$7.800'],
+                ['name' => 'Kahlua', 'description' => '', 'price' => '$6.900'],
+                ['name' => 'Drambuie', 'description' => '', 'price' => '$9.200'],
+                ['name' => 'Frangelico', 'description' => '', 'price' => '$7.450'],
+                ['name' => 'Licor 43', 'description' => '', 'price' => '$7.990'],
+                ['name' => 'Bols Flor de Saúco', 'description' => '', 'price' => '$6.600'],
+                ['name' => 'Mitjans Triple Sec', 'description' => '', 'price' => '$6.600'],
+                ['name' => 'Mitjans Amaretto', 'description' => '', 'price' => '$6.600'],
+                ['name' => 'Mitjans Licor de Café', 'description' => '', 'price' => '$6.600'],
+                ['name' => 'Mitjans Licor de Cherry', 'description' => '', 'price' => '$6.600'],
+            ],
+        ],
+        [
+            'id' => 'tragos-autor',
+            'title' => 'Tragos de autor',
+            'subtitle' => 'Cócteles de la casa',
+            'image' => 'tragos de autor.png',
+            'items' => [
+                ['name' => 'Tinta Tropical', 'description' => 'Un cóctel clarificado de apariencia cristalina a base de frutos tropicales. Las notas de Tanqueray Royale, maracuyá y menta se funden en una experiencia sedosa, fresca y aromática.', 'price' => '$9.990'],
+                ['name' => 'Añejo Tropical', 'description' => 'La calidez del ron y el pisco añejado en barrica se encuentra con la dulzura del mango y una delicada espuma de piña y jengibre. Intenso, exótico y con un final especiado.', 'price' => '$9.990'],
+                ['name' => 'Entre Tintas', 'description' => 'Una combinación fresca y herbácea donde el tequila se une a un shrub de vino tinto y boldo, equilibrado con toques a flor de saúco y tintes cítricos.', 'price' => '$8.990'],
+                ['name' => 'Tinto & Tonic - Sangria de la casa', 'description' => 'Vino tinto con dulzor tropical de mango y toque especiado de Fireball, refrescado por cítricos y fruta fresca.', 'price' => '$8.990'],
+                ['name' => 'La Tónica (mocktail)', 'description' => 'Aperitivo sin alcohol de inspiración mediterránea con Aperol sin alcohol, shrub de pomelo y laurel, jugo de naranja, limón, tónica y solución salina.', 'price' => '$7.990'],
+                ['name' => 'N3 (mocktail)', 'description' => 'Creación sin alcohol con Ramazzotti sin alcohol, infusión fría de jazmín y boldo, jugo de pera y espumante sin alcohol.', 'price' => '$8.990'],
+            ],
+        ],
+        [
+            'id' => 'piscos',
+            'title' => 'Piscos',
+            'subtitle' => 'Destilados',
+            'image' => 'pisco.png',
+            'items' => [
+                ['name' => 'Alto del Carmen 35', 'description' => '', 'price' => '$6.450'],
+                ['name' => 'Alto del Carmen doble destilado 40', 'description' => '', 'price' => '$7.890'],
+                ['name' => 'Alto del Carmen 40', 'description' => '', 'price' => '$7.800'],
+                ['name' => 'Mistral 35', 'description' => '', 'price' => '$6.490'],
+                ['name' => 'Mistral Nobel añejado en roble 40', 'description' => '', 'price' => '$8.490'],
+                ['name' => 'Mistral Nobel barrica tostada 40', 'description' => '', 'price' => '$8.490'],
+                ['name' => 'Mistral variedades', 'description' => '', 'price' => '$8.490'],
+                ['name' => 'Mistral Gran Nobel 40', 'description' => '', 'price' => '$14.990'],
+            ],
+        ],
+        [
+            'id' => 'gin',
+            'title' => 'Gin',
+            'subtitle' => 'Destilados',
+            'image' => 'gin.png',
+            'items' => [
+                ['name' => 'Tanqueray London Dry', 'description' => '', 'price' => '$8.900'],
+                ['name' => 'Tanqueray Ten', 'description' => '', 'price' => '$10.990'],
+                ['name' => 'Tanqueray Royale', 'description' => '', 'price' => '$9.990'],
+                ['name' => 'Beefeater London Dry', 'description' => '', 'price' => '$8.990'],
+                ['name' => 'Beefeater Pink', 'description' => '', 'price' => '$8.990'],
+                ['name' => 'Beefeater 24', 'description' => '', 'price' => '$11.990'],
+                ['name' => 'Hendricks', 'description' => '', 'price' => '$9.990'],
+            ],
+        ],
+        [
+            'id' => 'ron',
+            'title' => 'Ron',
+            'subtitle' => 'Destilados',
+            'image' => 'ron.png',
+            'items' => [
+                ['name' => 'Maddero Dorado', 'description' => '', 'price' => '$5.200'],
+                ['name' => 'Maddero Blanco', 'description' => '', 'price' => '$5.200'],
+                ['name' => 'Havana Club 3 años', 'description' => '', 'price' => '$5.990'],
+                ['name' => 'Havana Club Añejo 7 años', 'description' => '', 'price' => '$9.990'],
+            ],
+        ],
+        [
+            'id' => 'vodka',
+            'title' => 'Vodka',
+            'subtitle' => 'Destilados',
+            'image' => 'vodka.png',
+            'items' => [
+                ['name' => 'Smirnoff', 'description' => '', 'price' => '$6.500'],
+                ['name' => 'Absolut Blue', 'description' => '', 'price' => '$7.800'],
+                ['name' => 'Absolut Citron', 'description' => '', 'price' => '$7.800'],
+                ['name' => 'Absolut Raspberries', 'description' => '', 'price' => '$7.800'],
+                ['name' => 'Stoli', 'description' => '', 'price' => '$7.900'],
+            ],
+        ],
+        [
+            'id' => 'bitter',
+            'title' => 'Bitter',
+            'subtitle' => 'Destilados',
+            'image' => 'bitter.png',
+            'items' => [
+                ['name' => 'Campari', 'description' => '', 'price' => '$7.950'],
+                ['name' => 'Fernet Branca', 'description' => '', 'price' => '$7.890'],
+            ],
+        ],
+        [
+            'id' => 'tequila',
+            'title' => 'Tequila',
+            'subtitle' => 'Destilados',
+            'image' => 'tequila.png',
+            'items' => [
+                ['name' => 'Don Julio Blanco', 'description' => '', 'price' => '$8.990'],
+                ['name' => 'Don Julio Reposado', 'description' => '', 'price' => '$9.990'],
+                ['name' => 'Olmeca Blanco', 'description' => '', 'price' => '$6.900'],
+                ['name' => 'El Jimador Blanco', 'description' => '', 'price' => '$7.990'],
+                ['name' => 'El Jimador Reposado', 'description' => '', 'price' => '$7.990'],
+            ],
+        ],
+        [
+            'id' => 'vermouth',
+            'title' => 'Vermouth',
+            'subtitle' => 'Destilados',
+            'image' => 'Vermouth.png',
+            'items' => [
+                ['name' => 'Campano Rosso', 'description' => '', 'price' => '$6.890'],
+                ['name' => 'Campano Blanco', 'description' => '', 'price' => '$6.890'],
+                ['name' => 'Martini Extra Dry', 'description' => '', 'price' => '$5.990'],
+            ],
+        ],
+        [
+            'id' => 'cervezas',
+            'title' => 'Cervezas',
+            'subtitle' => 'Botellas, schop y agregados',
+            'image' => 'cervezas.png',
+            'items' => [
+                ['name' => 'Heineken sin alcohol', 'description' => '', 'price' => '$3.800'],
+                ['name' => 'Corona Extra', 'description' => '', 'price' => '$3.800'],
+                ['name' => 'Corona Extra sin alcohol', 'description' => '', 'price' => '$3.400'],
+                ['name' => 'Stella Artois', 'description' => '', 'price' => '$3.850'],
+                ['name' => 'Kunstmann miel', 'description' => '', 'price' => '$3.900'],
+                ['name' => 'Kunstmann Arándano', 'description' => '', 'price' => '$3.900'],
+                ['name' => 'Kunstmann sin alcohol', 'description' => '', 'price' => '$3.900'],
+                ['name' => 'Schop Kunstmann Torobayo 500cc', 'description' => '', 'price' => '$4.990'],
+                ['name' => 'Schop Austral Calafate 500cc', 'description' => '', 'price' => '$4.990'],
+                ['name' => 'Schop Calafate 500cc', 'description' => '', 'price' => '$5.700'],
+                ['name' => 'Schop Stout 500cc', 'description' => '', 'price' => '$5.700'],
+                ['name' => 'Schop Ambar 500cc', 'description' => '', 'price' => '$6.500'],
+                ['name' => 'Chelada', 'description' => '', 'price' => '$1.200'],
+                ['name' => 'Michelada', 'description' => '', 'price' => '$1.990'],
+                ['name' => 'Michelada completa', 'description' => '', 'price' => '$2.500'],
+                ['name' => 'Bloody chelada', 'description' => '', 'price' => '$2.990'],
             ],
         ],
     ];
@@ -181,7 +337,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Carta completa de Tinta & Tonic Bar de Tapas con tablas espanolas, tapas, cocteleria y precios.">
+        <meta name="description" content="Carta completa de Tinta & Tonic Bar de Tapas con tablas españolas, tapas, cóctelería y precios.">
 
         <title>Tinta & Tonic Bar de Tapas</title>
 
@@ -250,7 +406,7 @@
                                 </h1>
                             </div>
                             <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
-                                Una carta para compartir, una barra con caracter y una noche que empieza con tapas y termina en sobremesa.
+                                Una carta para compartir, una barra con carácter y una noche que empieza con tapas y termina en sobremesa.
                             </p>
 
                             <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
@@ -298,7 +454,9 @@
                                                             <h3 class="font-['Playfair_Display'] text-lg font-bold leading-tight text-white sm:text-2xl">{{ $item['name'] }}</h3>
                                                             <p class="shrink-0 font-['Playfair_Display'] text-lg font-bold leading-tight text-white sm:text-2xl">{{ $item['price'] ?? $defaultPrice }}</p>
                                                         </div>
-                                                        <p class="mt-1 max-w-3xl text-xs leading-5 text-white/66 sm:mt-2 sm:text-sm sm:leading-6">{{ $item['description'] }}</p>
+                                                        @if ($item['description'] !== '')
+                                                            <p class="mt-1 max-w-3xl text-xs leading-5 text-white/66 sm:mt-2 sm:text-sm sm:leading-6">{{ $item['description'] }}</p>
+                                                        @endif
                                                     </article>
                                                 @endforeach
                                             </div>
@@ -315,9 +473,9 @@
                     <div class="relative mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[1fr_.8fr] lg:py-24">
                         <div>
                             <p class="text-sm font-bold uppercase tracking-normal text-white/62">Reservas</p>
-                            <h2 class="mt-3 font-['Playfair_Display'] text-4xl font-bold tracking-normal sm:text-6xl">Trae hambre. Nosotros ponemos la mesa.</h2>
+                            <h2 class="mt-3 font-['Playfair_Display'] text-4xl font-bold tracking-normal sm:text-6xl">Aquí­ nacen las mejores historias, entre copas, tapas y buena compañí­a.</h2>
                             <p class="mt-5 max-w-2xl text-lg leading-8 text-white/70">
-                                Reserva para una tabla, una ronda de cocteles o una noche completa. Tinta & Tonic Bar de Tapas esta hecho para compartir.
+                                Reserva para una tabla, una ronda de cócteles o una noche completa. Tinta & Tonic Bar de Tapas está hecho para compartir.
                             </p>
                         </div>
 
@@ -325,11 +483,15 @@
                             <p class="font-['Playfair_Display'] text-3xl font-bold">Tinta &amp; Tonic</p>
                             <div class="mt-6 grid gap-4 text-sm text-white/76">
                                 <p><span class="font-semibold text-white">Instagram:</span> @tinta_tonic</p>
-                                <p><span class="font-semibold text-white">Telefono:</span> +569 934 894 34</p>
+                                <p><span class="font-semibold text-white">Teléfono:</span> +56 9 0000 0000</p>
+                                <p><span class="font-semibold text-white">Dirección:</span> Av. Pablo Neruda 1694 - Témuco</p>
                                 <p><span class="font-semibold text-white">Web:</span> www.tintatonic.cl</p>
                             </div>
-                            <a href="tel:+56993489434" class="mt-7 inline-flex h-12 w-full items-center justify-center rounded-lg bg-[#111142] px-6 text-sm font-bold text-white transition hover:bg-[#111142]">
-                                Llamar
+                            <a href="https://wa.me/56900000000" target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#25D366] px-6 text-sm font-bold text-white transition hover:bg-[#1ebe5d]">
+                                <svg class="h-5 w-5" viewBox="0 0 32 32" aria-hidden="true" fill="currentColor">
+                                    <path d="M16.01 3.2C8.95 3.2 3.2 8.94 3.2 16c0 2.26.59 4.47 1.72 6.42L3.1 29l6.74-1.77A12.7 12.7 0 0 0 16.01 28.8c7.06 0 12.79-5.74 12.79-12.8S23.07 3.2 16.01 3.2Zm0 23.42c-1.98 0-3.9-.54-5.58-1.56l-.4-.24-4 1.05 1.07-3.9-.26-.4A10.57 10.57 0 0 1 5.38 16c0-5.86 4.77-10.62 10.63-10.62 5.85 0 10.61 4.76 10.61 10.62S21.86 26.62 16.01 26.62Zm5.82-7.96c-.32-.16-1.9-.94-2.2-1.04-.3-.11-.52-.16-.74.16-.21.32-.84 1.04-1.03 1.25-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.58-1.59-.95-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.5.14-.65.15-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.21 0-.56.08-.85.4-.3.32-1.12 1.09-1.12 2.66s1.15 3.09 1.31 3.3c.16.21 2.26 3.45 5.48 4.84.77.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37Z"/>
+                                </svg>
+                                WhatsApp
                             </a>
                         </div>
                     </div>
@@ -360,3 +522,4 @@
         </script>
     </body>
 </html>
+
