@@ -137,7 +137,7 @@
                 ['name' => 'Tropical Gin', 'description' => 'Gin, Red Bull Yellow.', 'price' => '$6.500'],
                 ['name' => 'Pisco Sour nacional', 'description' => 'Limón, syrup simple, pisco artesano, Angostura bitter.', 'price' => '$5.450'],
                 ['name' => 'Pisco Sour peruano', 'description' => 'Lima, syrup simple, pisco gran cruz, Angostura bitter.', 'price' => '$7.990'],
-                ['name' => 'Mojito cubano', 'description' => 'Limón, syrup simple, menta, ron Maddero blanco, agua soda.', 'price' => '$5.500'],
+                ['name' => 'Mojito cubano', 'description' => 'Limón, syrup simple, menta, ron Maddero blanco, agua soda.', 'price' => '$5.500', 'promo_price' => '2x $8.000'],
                 ['name' => 'Mojito Sabores', 'description' => 'Limón, syrup simple, menta, ron Maddero blanco, pulpa a elección, agua soda.', 'price' => '$6.990'],
                 ['name' => 'Moscow mule', 'description' => 'Lima, syrup simple, vodka Smirnoff, ginger beer.', 'price' => '$6.800'],
                 ['name' => 'Caipiriña', 'description' => 'Lima en cuartos, syrup simple, Cachaça 51.', 'price' => '$5.450'],
@@ -157,7 +157,7 @@
                 ['name' => 'Rusty Nail', 'description' => 'Johnnie Walker Red, Drambuie.', 'price' => '$6.750'],
                 ['name' => 'Espresso Martini', 'description' => 'Vodka Smirnoff, licor Kahlua, espresso, syrup simple.', 'price' => '$7.680'],
                 ['name' => 'Bloody Mary', 'description' => 'Vodka Smirnoff, jugo de tomate, limón, sal, pimienta, salsa inglesa, Tabasco, aceitunas sevillanas, apio.', 'price' => '$7.980'],
-                ['name' => 'Ramazzotti Spritz', 'description' => 'Ramazzotti Rosato, espumante, agua soda.', 'price' => '$6.500'],
+                ['name' => 'Ramazzotti Spritz', 'description' => 'Ramazzotti Rosato, espumante, agua soda.', 'price' => '$6.500', 'promo_price' => '2x $9.000'],
                 ['name' => 'Ramazzotti Violetto Tonic', 'description' => 'Ramazzotti Violetto, tónica, romero, arándanos.', 'price' => '$6.500'],
                 ['name' => 'Aperol Spritz', 'description' => 'Aperol, espumante, agua soda, naranja.', 'price' => '$6.800'],
             ],
@@ -221,13 +221,11 @@
             'subtitle' => 'Destilados',
             'image' => 'pisco.png',
             'items' => [
-                ['name' => 'Alto del Carmen 35', 'description' => '', 'price' => '$6.450'],
+                ['name' => 'Alto del Carmen 35', 'description' => '', 'price' => '$6.450', 'promo_price' => '2x $7.000'],
                 ['name' => 'Alto del Carmen doble destilado 40', 'description' => '', 'price' => '$7.890'],
                 ['name' => 'Alto del Carmen 40', 'description' => '', 'price' => '$7.800'],
-                ['name' => 'Mistral 35', 'description' => '', 'price' => '$6.490'],
-                ['name' => 'Mistral Nobel añejado en roble 40', 'description' => '', 'price' => '$8.490'],
-                ['name' => 'Mistral Nobel barrica tostada 40', 'description' => '', 'price' => '$8.490'],
-                ['name' => 'Mistral variedades', 'description' => '', 'price' => '$8.490'],
+                ['name' => 'Mistral 35', 'description' => '', 'price' => '$6.490', 'promo_price' => '2x $7.000'],
+                ['name' => 'Mistral Nobel variedades', 'description' => '', 'price' => '$8.490', 'promo_price' => '2x $10.000'],
                 ['name' => 'Mistral Gran Nobel 40', 'description' => '', 'price' => '$14.990'],
             ],
         ],
@@ -278,7 +276,7 @@
             'image' => 'bitter.png',
             'items' => [
                 ['name' => 'Campari', 'description' => '', 'price' => '$7.950'],
-                ['name' => 'Fernet Branca', 'description' => '', 'price' => '$7.890'],
+                ['name' => 'Fernet Branca', 'description' => '', 'price' => '$7.890', 'promo_price' => '2x $11.000'],
             ],
         ],
         [
@@ -452,7 +450,12 @@
                                                     <article class="p-4 sm:p-6">
                                                         <div class="flex items-start justify-between gap-4">
                                                             <h3 class="font-['Playfair_Display'] text-lg font-bold leading-tight text-white sm:text-2xl">{{ $item['name'] }}</h3>
-                                                            <p class="shrink-0 font-['Playfair_Display'] text-lg font-bold leading-tight text-white sm:text-2xl">{{ $item['price'] ?? $defaultPrice }}</p>
+                                                            <p class="shrink-0 font-['Playfair_Display'] text-lg font-bold leading-tight text-white sm:text-2xl">
+                                                                {{ $item['price'] ?? $defaultPrice }}
+                                                                @isset($item['promo_price'])
+                                                                    <span class="block text-xs leading-5 text-white/66 sm:text-sm">{{ $item['promo_price'] }}</span>
+                                                                @endisset
+                                                            </p>
                                                         </div>
                                                         @if ($item['description'] !== '')
                                                             <p class="mt-1 max-w-3xl text-xs leading-5 text-white/66 sm:mt-2 sm:text-sm sm:leading-6">{{ $item['description'] }}</p>
@@ -522,4 +525,3 @@
         </script>
     </body>
 </html>
-
