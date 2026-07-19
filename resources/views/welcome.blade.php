@@ -1,5 +1,5 @@
 ﻿@php
-    $defaultPrice = '';
+    $defaultPrice = '$12.345';
 
     $menuSections = [
         [
@@ -61,7 +61,7 @@
             'subtitle' => 'Papas fritas artesanales con topping',
             'image' => 'papas de autor.jpg',
             'items' => [
-                ['name' => 'Fundición tonic', 'description' => 'Filete de res, chorizo, pollo grillado, champiñones y pimentones asados, mozzarella fundida y cebolla caramelizada, sobre papas fritas en gajos, acompañada de salsas.', 'price' => '$20.990'],
+                ['name' => 'Fundición tonic', 'description' => 'Filete de res, chorizo, pollo grillado, champiñones y pimentones asados, mozzarella fundida y cebolla caramelizada, sobre papas fritas en gajos, acompañada de salsa.', 'price' => '$20.990'],
                 ['name' => 'Res peruana', 'description' => 'Filete de res sellado, tomate, cebolla morada, cebollín, sobre papas fritas en gajos, acompañada de salsas.', 'price' => '$16.990'],
             ],
         ],
