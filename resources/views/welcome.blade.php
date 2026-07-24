@@ -209,9 +209,9 @@
             'items' => [
                 ['name' => 'Violette', 'description' => 'Un cóctel clarificado de apariencia cristalina a base de frutos tropicales. Las notas de Tanqueray Royale, maracuyá y menta se funden en una experiencia sedosa, fresca y aromática.', 'price' => '$9.990'],
                 ['name' => 'Grizzly', 'description' => 'La calidez del ron y el pisco añejado en barrica se encuentra con la dulzura del mango y una delicada espuma de piña y jengibre. Intenso, exótico y con un final especiado.', 'price' => '$9.990'],
-                ['name' => 'Neptuno', 'description' => 'Una combinación fresca y herbácea donde el tequila se une a un shrub de vino tinto y boldo, equilibrado con toques a flor de saúco y tintes cítricos.', 'price' => '$8.990'],
+                ['name' => 'Entre tintas', 'description' => 'Una combinación fresca y herbácea donde el tequila se une a un shrub de vino tinto y boldo, equilibrado con toques a flor de saúco y tintes cítricos.', 'price' => '$8.990'],
                 ['name' => 'Tinto & Tonic - Sangria de la casa', 'description' => 'Vino tinto con dulzor tropical de mango y toque especiado de Fireball, refrescado por cítricos y fruta fresca.', 'price' => '$8.990'],
-                ['name' => 'Aurora (mocktail)', 'description' => 'Aperitivo sin alcohol de inspiración mediterránea con Aperol sin alcohol, shrub de pomelo y laurel, jugo de naranja, limón, tónica y solución salina.', 'price' => '$7.990'],
+                ['name' => 'La tonica (mocktail)', 'description' => 'Aperitivo sin alcohol de inspiración mediterránea con Aperol sin alcohol, shrub de pomelo y laurel, jugo de naranja, limón, tónica y solución salina.', 'price' => '$7.990'],
                 ['name' => 'N3 (mocktail)', 'description' => 'Creación sin alcohol con Ramazzotti sin alcohol, infusión fría de jazmín y boldo, jugo de pera y espumante sin alcohol.', 'price' => '$8.990'],
             ],
         ],
