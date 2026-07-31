@@ -136,6 +136,7 @@
                 ['name' => 'Mojito cubano', 'description' => 'Limón, syrup simple, menta, ron Maddero blanco, agua soda.', 'price' => '2x $8.000'],
                 ['name' => 'Ramazzotti Spritz', 'description' => 'Ramazzotti Rosato, espumante, agua soda.', 'price' => '2x $9.000'],
                 ['name' => 'Gin', 'description' => '', 'price' => '2x $8.000'],
+                ['name' => 'Shot tequila Olmeca Blanco', 'description' => '', 'price' => '2x $10.990'],
                 ['name' => 'Alto del Carmen 35', 'description' => '', 'price' => '2x $7.000'],
                 ['name' => 'Mistral 35', 'description' => '', 'price' => '2x $7.000'],
                 ['name' => 'Mistral Nobel variedades', 'description' => '', 'price' => '2x $10.000'],
