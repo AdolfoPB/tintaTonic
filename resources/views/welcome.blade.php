@@ -150,7 +150,7 @@
             'image' => 'tragos y cocteleria.jpg',
             'items' => [
                 ['name' => 'Gin Tonic', 'description' => 'Gin, bebida tónica, toque cítrico.', 'price' => '$5.990'],
-                ['name' => 'Tropical Gin', 'description' => 'Gin, Red Bull Yellow.', 'price' => '$6.500'],
+                ['name' => 'Tropical Gin', 'description' => 'Gin, Red Bull Yellow.', 'price' => '$7.500'],
                 ['name' => 'Pisco Sour nacional', 'description' => 'Limón, syrup simple, pisco artesano, Angostura bitter.', 'price' => '$5.450'],
                 ['name' => 'Pisco Sour peruano', 'description' => 'Lima, syrup simple, pisco gran cruz, Angostura bitter.', 'price' => '$7.990'],
                 ['name' => 'Mojito cubano', 'description' => 'Limón, syrup simple, menta, ron Maddero blanco, agua soda.', 'price' => '$5.500'],
