@@ -131,6 +131,7 @@
             'id' => 'promociones',
             'title' => 'Promociones',
             'subtitle' => 'Precios especiales 2x',
+            'highlight' => 'Hasta las 22:30',
             'image' => 'promociones.png',
             'items' => [
                 ['name' => 'Mojito cubano', 'description' => 'Limón, syrup simple, menta, ron Maddero blanco, agua soda.', 'price' => '2x $8.000'],
@@ -458,6 +459,9 @@
                                                 <div class="mb-5 h-1 w-24 rounded-full bg-[#111142]"></div>
                                                 <p class="text-sm font-bold uppercase tracking-normal text-white/54">{{ $section['subtitle'] }}</p>
                                                 <h2 class="mt-2 font-['Playfair_Display'] text-4xl font-bold tracking-normal text-white sm:text-5xl">{{ $section['title'] }}</h2>
+                                                @isset($section['highlight'])
+                                                    <p class="mt-3 font-['Playfair_Display'] text-3xl font-bold leading-tight text-white sm:text-4xl">{{ $section['highlight'] }}</p>
+                                                @endisset
                                             </div>
 
                                             <div class="divide-y divide-white/10 bg-[#2f2f2b]">
